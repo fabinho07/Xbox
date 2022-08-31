@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.main-principal {
+    background-color: #0C0C0C;
+    width: 100%;
+    height: 350vh;
+}
+
+/* header-cabecalho */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.menu a::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #9BF00B;
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+    transition: 0.5s ease-in-out;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.header button {
+    width: 190px;
+    padding: 12px;
+    background-color: #9BF00B;
+    text-transform: uppercase;
+    color: #0C0C0C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* section-secao*/
+
+.xbox-x {
+    margin-top: 80px;
+}
+
+.xbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.xbox h1 {
+    color: white;
+    font-size: 2.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.xbox strong {
+    color: #9BF00B;
+    text-transform: uppercase;
+}
+
+.xbox img {
+    width: 440px;
+}
+
+/* section-desempenho */
+
+.secao-desempenho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.desempenho {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.desempenho h3 {
+    font-size: 2.3rem;
+    color: #9BF00B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.desempenho p {
+    color: #C0C0C0;
+    font-size: 1.1rem;
+    line-height: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.desempenho strong {
+    color: white;
+    font-size: 2.3rem;
+    margin-top: -30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.controle img {
+    width: 280px;
+}
+
+/* section-fifa */
+
+.secao-fifa {
+    background-image: url('img/fifa.jpg');
+    max-width: 1900px;
+    height: 50vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+}
+
+/* section-perguntas */
+
+.secao-perguntas {
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.secao-perguntas h4 {
+    color: #9BF00B;
+    font-size: 2.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.secao-perguntas strong {
+    color: white;
+}
+
+.meus-jogos h5 {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.meus-jogos p {
+    color: #C0C0C0;
+    font-size: 0.9rem;
+    margin-top: 10px;
+
+}
+
+.meus-jogos hr {
+    width: 320px;
+    margin-top: 30px;
+    border: solid 1px #2E2E2E;
+}
+
+.meus-jogos img {
+    width: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+   
+}
+
+.meus-jogos h6 {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.meus-jogos h2 {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* footer */
+
+.footer-rodape {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-rodape img {
+    width: 90px;
+    padding-bottom: 100px;
+}
+
+.direitos {
+   display: flex;
+   gap: 30px;
+   
+}
+
+.direitos p {
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.direitos strong {
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* responsividade */
+
+@media(max-width:444px) {
+    .secao-perguntas h4 {
+       font-size: 1.2rem;
+    }
+
+
+    .meus-jogos h5 {
+        font-size: 0.8rem;
+    }
+
+    .meus-jogos h6 {
+        font-size: 0.7rem;
+    }
+
+    .meus-jogos h2 {
+        font-size: 0.7rem;
+    }
+
+    .meus-jogos p {
+        font-size: 0.6rem;
+    }
+
+    .meus-jogos img {
+        display: none;
+    }
+
+    .menu ul {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    
+}
+
+
+
